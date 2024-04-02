@@ -12,9 +12,9 @@ export default {
 const whisperInit = (api) => {
   const currentUser = api.getCurrentUser();
   const myObj = {currentUser:currentUser, currentUser_staff:currentUser.staff, currentUser_whisperer: currentUser.whisperer };
-  console.log(myObj)
+  console.log(myObj);
   if (currentUser && currentUser.staff && currentUser.whisperer) {
-    console.log("whisperInit is true")
+    console.log("whisperInit is true");
     api.attachWidgetAction("post-menu", "toggleWhisper", function () {
       const model = this.attrs;
       let newType = model.post_type === 1 ? 4 : 1;
