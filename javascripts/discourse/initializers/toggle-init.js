@@ -25,8 +25,6 @@ const whisperInit = (api) => {
     });
 
     api.addPostMenuButton("toggleWhisper", (model) => {
-      const myObj = {model_staff:model.staff, model_post_number:model.post_number };
-      console.log(myObj);
       if (!model.staff || model.post_number < 2) return;
 
       let isWhisper = model.post_type === 4;
