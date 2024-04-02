@@ -1,8 +1,9 @@
 {
   "name": "Toggle Whisper",
-  "about_url": null,
   "license_url": null,
   "component": true,
   "assets": {},
-  "color_schemes": {}
+  "theme_version": "0.67",
+  "color_schemes": {},
+  "about_url": "https://github.com/unixneo/md-composer-extras-neo"
 }
